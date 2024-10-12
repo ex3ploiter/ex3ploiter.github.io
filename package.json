@@ -65,5 +65,12 @@
   "bugs": {
     "url": "https://github.com/KonradSzwarc/devscard/issues"
   },
-  "homepage": "https://github.com/KonradSzwarc/devscard#readme"
+  "homepage": "https://github.com/KonradSzwarc/devscard#readme",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
 }
