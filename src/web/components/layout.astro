@@ -6,11 +6,11 @@ export interface Props extends Config {
   sections: Sections;
 }
 
-const { meta, i18n, sections } = Astro.props;
+const { meta, sections } = Astro.props;
 ---
 
 <!DOCTYPE html>
-<html lang={i18n.locale.code} class="scroll-smooth">
+<html lang='en-us' class="scroll-smooth">
   <Head meta={meta} sections={sections} />
   <body class="flex justify-center overflow-x-hidden bg-gray-50 dark:bg-gray-900 xl:relative xl:left-7">
     <slot />
