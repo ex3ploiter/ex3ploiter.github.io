@@ -13,7 +13,7 @@ const generateFavicons = () =>
     appName: config.meta.title,
     appDescription: config.meta.description,
     appShortName: config.meta.title,
-    lang: config.i18n.locale.code,
+    lang: 'enUS',
     start_url: '.',
     icons: {
       android: ['android-chrome-192x192.png', 'android-chrome-512x512.png'],
