@@ -9,7 +9,7 @@ const mainSectionData = {
     slug: 'profile',
     visible: true,
   },
-  image: import('../..//assets/my-image.jpeg'),
+  image: import('@/assets/my-image.jpeg'),
   fullName: 'Mark Freeman',
   role: 'Senior React Developer',
   details: [
