@@ -6,7 +6,8 @@ import { visualizer } from 'rollup-plugin-visualizer';
 
 // https://astro.build/config
 export default defineConfig({
-  output: 'server',
+  // output: 'server',
+  output: 'hybrid',
   site:'https://ex3ploiter.github.io',
   integrations: [tailwind(), image(), compress()],
   vite: {
