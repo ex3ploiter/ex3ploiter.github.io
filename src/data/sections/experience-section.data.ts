@@ -40,7 +40,7 @@ const experienceSectionData = {
         tags: [csharp(), dotnet(), mysql()],
       },
       links: [website({ url: 'https://nigc.ir/' })],
-    }
+    },
   ],
 } as const satisfies ReadonlyDeep<ExperienceSection>;
 
