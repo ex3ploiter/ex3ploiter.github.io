@@ -4,12 +4,12 @@ export interface Job {
   /**
    * Your position in the company.
    */
-  role: string;
+  role?: string;
 
   /**
    * Name of the company.
    */
-  company: string;
+  company?: string;
 
   /**
    * [WEB] Logo of the company.
@@ -28,18 +28,18 @@ export interface Job {
   /**
    * A short overview of your job. You can use markdown syntax.
    */
-  description: string;
+  description?: string;
 
   /**
    * Any information that you want to highlight.
    * We recommend to describe the technologies used in the project.
    */
-  tagsList: TagsList;
+  tagsList?: TagsList;
 
   /**
    * [WEB] Links related to your job (e.g. production app, company's website, project website).
    */
-  links: LinkButton[];
+  links?: LinkButton[];
 }
 
 export interface ExperienceSection extends Section {

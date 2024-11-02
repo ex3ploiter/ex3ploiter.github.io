@@ -46,15 +46,15 @@ export interface MainSection extends Section {
   /**
    * [WEB] Any information that you want to highlight.
    */
-  tags: Tag[];
+  tags?: Tag[];
 
   /**
    * [WEB] A button that will be used to download your resume.
    */
-  action: DownloadButton;
+  action?: DownloadButton;
 
   /**
    * [WEB] Your social media profiles.
    */
-  links: LinkButton[];
+  links?: LinkButton[];
 }
