@@ -16,10 +16,4 @@ const isRemoteImage = typeof src === 'string';
 const loading = import.meta.env.PUBLIC_APP_ENV === 'snapshot' ? 'eager' : 'lazy';
 ---
 
-{
-  isRemoteImage ? (
-    <img src={src} {...props} />
-  ) : (
-    <Image format="webp" src={src} loading={loading} {...props} />
-  )
-}
+{isRemoteImage ? <img src={src} {...props} /> : <Image format="webp" src={src} loading={loading} {...props} />}
