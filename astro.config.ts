@@ -7,14 +7,13 @@ import { visualizer } from 'rollup-plugin-visualizer';
 // https://astro.build/config
 export default defineConfig({
   // output: 'server',
-  // output: 'hybrid',
   site:'https://ex3ploiter.github.io',
   integrations: [tailwind(), image(), compress()],
   vite: {
     plugins: [visualizer()],
     resolve: {
       alias: {
-        'date-fns/locale': 'date-fns/locale/index.js',
+        // 'date-fns/locale': 'date-fns/locale/index.js',
       },
     },
   },

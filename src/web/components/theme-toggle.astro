@@ -11,21 +11,39 @@ import Icon from './icon.astro';
   <Icon class="hidden dark:block" name="ri:sun-line" size={20} />
 </button>
 
-<script>
-  const themeToggle = document.getElementById('theme-toggle')!;
+<script is:inline>
+  // Set the initial theme to light by default
+  (() => {
+    const savedTheme = localStorage.getItem('theme');
+    const systemPrefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
 
-  const toggleTheme = () => {
-    const theme = localStorage.getItem('theme') ?? 'light';
-    const newTheme = theme === 'light' ? 'dark' : 'light';
-    const themeMeta = document.getElementsByName('theme-color') as NodeListOf<HTMLMetaElement>;
+    // Default to light if no saved preference is found
+    const initialTheme = savedTheme || 'light';
 
-    if (themeMeta[0]) {
-      themeMeta[0].content = newTheme === 'dark' ? '#1a202c' : '#ffffff';
+    if (initialTheme === 'dark' || (!savedTheme && systemPrefersDark)) {
+      document.documentElement.classList.add('dark');
+    } else {
+      document.documentElement.classList.remove('dark');
+    }
+
+    const themeMeta = document.querySelector('meta[name="theme-color"]');
+    if (themeMeta) {
+      themeMeta.content = initialTheme === 'dark' ? '#1a202c' : '#ffffff';
+    }
+  })();
+
+  // Theme toggle logic
+  document.getElementById('theme-toggle')?.addEventListener('click', () => {
+    const currentTheme = document.documentElement.classList.contains('dark') ? 'dark' : 'light';
+    const newTheme = currentTheme === 'light' ? 'dark' : 'light';
+    const themeMeta = document.querySelector('meta[name="theme-color"]');
+
+    if (themeMeta) {
+      themeMeta.content = newTheme === 'dark' ? '#1a202c' : '#ffffff';
     }
 
     document.documentElement.classList[newTheme === 'dark' ? 'add' : 'remove']('dark');
     localStorage.setItem('theme', newTheme);
-  };
+  });
 
-  themeToggle.addEventListener('click', toggleTheme);
 </script>
