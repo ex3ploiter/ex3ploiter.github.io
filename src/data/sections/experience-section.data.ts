@@ -1,21 +1,22 @@
 import type { ExperienceSection } from '@/types/sections/experience-section.types';
 import type { ReadonlyDeep } from 'type-fest';
-import { facebook, github, instagram, linkedin, twitter, website } from '../helpers/links';
+// import { facebook, github, instagram, linkedin, twitter, website } from '../helpers/links';
+import {  website } from '../helpers/links';
 import {
-  chakraUi,
+  // chakraUi,
   csharp,
   dotnet,
-  eslint,
-  firebase,
+  // eslint,
+  // firebase,
   mysql,
-  nextJs,
-  nx,
-  pnpm,
-  react,
-  reactQuery,
-  tailwindCss,
-  typescript,
-  vue,
+  // nextJs,
+  // nx,
+  // pnpm,
+  // react,
+  // reactQuery,
+  // tailwindCss,
+  // typescript,
+  // vue,
 } from '../helpers/skills';
 
 const experienceSectionData = {

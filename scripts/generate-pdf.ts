@@ -1,7 +1,7 @@
 import { exec } from 'node:child_process';
-import * as path from 'node:path';
+// import * as path from 'node:path';
 import * as puppeteer from 'puppeteer';
-import { pdfPage } from 'puppeteer-report';
+// import { pdfPage } from 'puppeteer-report';
 
 const waitFor = (ms: number) => new Promise((resolve) => setTimeout(resolve, ms));
 
@@ -32,17 +32,17 @@ const retry = async ({ promise, retries, retryTime }: RetryOptions): GoToReturn 
 const main = async () => {
   const child = exec('npm run dev');
 
-  const browser = await puppeteer.launch({ headless: 'new' });
+  // const browser = await puppeteer.launch({ headless: 'new' });
 
-  const page = await browser.newPage();
+  // const page = await browser.newPage();
 
-  await page.setViewport({ width: 794, height: 1122, deviceScaleFactor: 2 });
+  // await page.setViewport({ width: 794, height: 1122, deviceScaleFactor: 2 });
 
-  await retry({
-    promise: () => goTo(page, 'http://localhost:3000/pdf'),
-    retries: 5,
-    retryTime: 1000,
-  });
+  // await retry({
+  //   promise: () => goTo(page, 'http://localhost:3000/pdf'),
+  //   retries: 5,
+  //   retryTime: 1000,
+  // });
 
   // await pdfPage(page, {
   //   path: path.join(__dirname, '..', 'public', 'cv.pdf'),
@@ -51,7 +51,7 @@ const main = async () => {
   //   margin: { top: '10mm', right: '10mm', bottom: '10mm', left: '10mm' },
   // });
 
-  await browser.close();
+  // await browser.close();
 
   child.kill();
 };

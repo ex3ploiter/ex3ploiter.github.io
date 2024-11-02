@@ -1,10 +1,10 @@
 import type { SkillsSection } from '@/types/sections/skills-section.types';
 import type { ReadonlyDeep } from 'type-fest';
 import {
-  apolloGraphql,
-  astro,
+  // apolloGraphql,
+  // astro,
   chakraUi,
-  cypress,
+  // cypress,
   eslint,
   firebase,
   mongoDb,
@@ -14,7 +14,7 @@ import {
   prettier,
   react,
   sass,
-  supabase,
+  // supabase,
   tailwindCss,
   typescript,
 } from '../helpers/skills';

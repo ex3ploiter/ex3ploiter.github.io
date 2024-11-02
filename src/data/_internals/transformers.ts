@@ -25,9 +25,9 @@ type DiplomaInstitution = Sections['education']['diplomas'][number]['institution
 
 // type SkillSetTitle = SkillSets[number]['title'];
 
-type Filter<T extends Readonly<unknown[]>, P> = T extends Readonly<[infer A, ...infer Rest]>
-  ? [...(A extends P ? [A] : []), ...Filter<Rest, P>]
-  : [];
+// type Filter<T extends Readonly<unknown[]>, P> = T extends Readonly<[infer A, ...infer Rest]>
+//   ? [...(A extends P ? [A] : []), ...Filter<Rest, P>]
+//   : [];
 
 // type SkillsBySkillSet<SkillSet extends SkillSetTitle> = Filter<
 //   SkillSets,
