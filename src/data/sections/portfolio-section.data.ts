@@ -1,7 +1,7 @@
 import type { PortfolioSection } from '@/types/sections/portfolio-section.types';
 import type { ReadonlyDeep } from 'type-fest';
 // import { demo, github, mockups, website } from '../helpers/links';
-import { demo,mockups } from '../helpers/links';
+import { demo, mockups } from '../helpers/links';
 // import {
 //   chakraUi,
 //   eslint,

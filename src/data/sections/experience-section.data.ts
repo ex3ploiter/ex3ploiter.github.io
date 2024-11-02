@@ -1,7 +1,7 @@
 import type { ExperienceSection } from '@/types/sections/experience-section.types';
 import type { ReadonlyDeep } from 'type-fest';
 // import { facebook, github, instagram, linkedin, twitter, website } from '../helpers/links';
-import {  website } from '../helpers/links';
+import { website } from '../helpers/links';
 import {
   // chakraUi,
   csharp,

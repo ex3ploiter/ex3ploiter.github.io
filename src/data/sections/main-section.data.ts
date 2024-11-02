@@ -1,7 +1,7 @@
 import type { MainSection } from '@/types/sections/main-section.types';
 import type { ReadonlyDeep } from 'type-fest';
 // import { facebook, github, linkedin, mail, twitter } from '../helpers/links';
-import {  github, linkedin, mail } from '../helpers/links';
+import { github, linkedin, mail } from '../helpers/links';
 
 const mainSectionData = {
   config: {
