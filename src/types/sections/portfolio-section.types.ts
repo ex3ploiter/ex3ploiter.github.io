@@ -68,7 +68,7 @@ export interface Project {
   paperLinks: Array<{
     text: string;
     url: string;
-    published?:string;
+    published?: string;
   }>;
   published: string;
 
@@ -77,15 +77,11 @@ export interface Project {
   authors: Array<{
     name: string;
     isCorresponding?: boolean;
-    isEqual?:boolean;
+    isEqual?: boolean;
     isBold?: boolean;
-    homepageLink?:string;
+    homepageLink?: string;
   }>;
   year?: number;
-
-
-
-
 }
 
 export interface PortfolioSection extends Section {

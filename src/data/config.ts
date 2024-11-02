@@ -1,6 +1,6 @@
 import type { Config } from '@/types/data';
 // import { enUS } from 'date-fns/locale';
-import { enUS } from 'date-fns/locale/en-US'
+import { enUS } from 'date-fns/locale/en-US';
 import type { ReadonlyDeep } from 'type-fest';
 
 const config = {
@@ -13,8 +13,7 @@ const config = {
   },
   meta: {
     title: 'Masoud Hadi',
-    description:
-      '',
+    description: '',
     faviconPath: '/src/assets/my-image.jpeg',
   },
   pdf: {

@@ -165,7 +165,6 @@ export const vue = createSkillFactory({
   url: 'https://vuejs.org/',
 });
 
-
 export const csharp = createSkillFactory({
   name: 'C#',
   icon: 'simple-icons:csharp',

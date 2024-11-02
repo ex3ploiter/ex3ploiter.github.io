@@ -163,8 +163,6 @@ export const repository = createLinkFactory({
   icon: 'fa6-solid:code-branch',
 });
 
-
-
 export const mail = createLinkFactory({
   name: 'Mail',
   icon: 'fa6-brands:google',

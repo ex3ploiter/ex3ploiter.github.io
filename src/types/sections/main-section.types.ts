@@ -41,7 +41,7 @@ export interface MainSection extends Section {
    * A short overview of you and your experience.
    */
   // description: string;
-  description?: Array<{text:string}>;
+  description?: Array<{ text: string }>;
 
   /**
    * [WEB] Any information that you want to highlight.

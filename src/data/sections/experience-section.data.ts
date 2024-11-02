@@ -38,7 +38,7 @@ const experienceSectionData = {
       tagsList: {
         title: 'Technologies',
         // tags: [react(), nextJs(), typescript(), nx(), firebase()],
-        tags: [csharp(),dotnet(),mysql()],
+        tags: [csharp(), dotnet(), mysql()],
       },
       // links: [facebook({ url: '#' }), linkedin({ url: '#' })],
       links: [website({ url: 'https://nigc.ir/' })],

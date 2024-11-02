@@ -23,7 +23,7 @@ const educationSectionData = {
       institution: 'Isfahan University of Technology',
       image: import('@/assets/logos/ir.sabapp.IUT_512x512.webp'),
       dates: [new Date('2019'), new Date('2024')],
-      description: "Bachelor of Science in Computer Engineering – Specialization in Intelligent Systems",
+      description: 'Bachelor of Science in Computer Engineering – Specialization in Intelligent Systems',
       links: [website({ url: 'https://english.iut.ac.ir/' })],
     },
   ],

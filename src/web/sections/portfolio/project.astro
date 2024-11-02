@@ -15,7 +15,19 @@ export interface Props extends Project {
   screenshotsConfig?: PortfolioSection['config']['screenshots'];
 }
 
-const { description, details, authors,image, links,paperLinks,published, name, tagsList, screenshots, screenshotsConfig } = Astro.props;
+const {
+  description,
+  details,
+  authors,
+  image,
+  links,
+  paperLinks,
+  published,
+  name,
+  tagsList,
+  screenshots,
+  screenshotsConfig,
+} = Astro.props;
 
 const alt = `${name} project thumbnail`;
 
@@ -24,10 +36,9 @@ const hasScreenshots = screenshots?.length && screenshots.length > 0;
 const screenshotsIcon = screenshotsConfig?.icon || 'fa6-solid:image';
 const screenshotsTooltip = screenshotsConfig?.title || 'Screenshots';
 ---
-<!-- <div class="inline-grid w-full  xl:grid-cols-2"></div> -->
-<!-- <div class="flex flex-col gap-0"> -->
-  <!-- <div class="grid grid-cols-2 md:grid-cols-1 gap-1"> -->
-    <div class="inline-grid xl:grid-cols-[auto_auto]">
+
+<!-- <div class="inline-grid w-full  xl:grid-cols-2"></div> --><!-- <div class="flex flex-col gap-0"> --><!-- <div class="grid grid-cols-2 md:grid-cols-1 gap-1"> -->
+<div class="inline-grid xl:grid-cols-[auto_auto]">
   <div class="flex flex-col gap-0">
     <div class="flex gap-6">
       <div class="flex w-full flex-col gap-4">
@@ -37,64 +48,63 @@ const screenshotsTooltip = screenshotsConfig?.title || 'Screenshots';
             <div>
               <Typography variant="item-title">{name}</Typography>
 
-
               <!-- Authors List -->
               <!-- <div class="flex flex-wrap gap-x-1  mb-2 mt-1 text-base text-gray-700"> -->
-              <div class="flex flex-wrap gap-x-1  mb-2 mt-1 text-base text-gray-700 dark:text-gray-300">
-                {authors.map((author, index) => (
-                  <span>
-                    <a
-                      // style="font-variant: unset"
-                      href={author.homepageLink}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      class={`
+              <div class="mb-2 mt-1 flex flex-wrap gap-x-1 text-base text-gray-700 dark:text-gray-300">
+                {
+                  authors.map((author, index) => (
+                    <span>
+                      <a
+                        style="font-variant: unset"
+                        href={author.homepageLink}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class={`
                         hover:text-blue-600
                         transition-colors
                         ${author.isBold ? 'font-semibold' : 'font-light'}
+                        decoration-blue-400
                         underline-offset-4
                         hover:underline
-                        decoration-blue-400
                       `}
-                    >
-                      {author.name}
+                      >
+                        {author.name}
 
-                      {author.isCorresponding && <sup class="text-blue-500 font-bold">#</sup>}
-                      {author.isEqual && <sup class="text-blue-500 font-bold">*</sup>}
-                    </a>
-                    {index < authors.length - 1 && <span class="text-gray-500">,&nbsp;</span>}
-                  </span>
-                ))}
+                        {author.isCorresponding && <sup class="text-blue-500 font-bold">#</sup>}
+                        {author.isEqual && <sup class="text-blue-500 font-bold">*</sup>}
+                      </a>
+                      {index < authors.length - 1 && <span class="text-gray-500">,&nbsp;</span>}
+                    </span>
+                  ))
+                }
               </div>
 
               <!-- Publication Info -->
               <!-- <div class="text-gray-600 mb-2 mt-0"> -->
-              <div class="text-gray-700 dark:text-gray-300  mb-2 mt-0 ">
+              <div class="mb-2 mt-0 text-gray-700 dark:text-gray-300">
                 {published}
               </div>
 
               <div class="mb-0">
-  <div class="flex flex-wrap gap-3">
+                <div class="flex flex-wrap gap-3">
+                  {
+                    paperLinks.map((link) => (
+                      <span>
+                        <a
+                          style="font-variant: small-caps"
+                          style="font-variant: unset"
+                          href={link.url}
+                          class="inline-flex  items-center rounded-md bg-gray-100  px-2 py-1 text-gray-700 transition-colors hover:bg-gray-200"
+                        >
+                          {link.text}
+                        </a>
+                      </span>
+                    ))
+                  }
+                </div>
+              </div>
 
-    {paperLinks.map((link) => (
-      <span>
-      <a
-        // style="font-variant: small-caps"
-        style="font-variant: unset"
-        href={link.url}
-        class="inline-flex  items-center px-2 py-1  rounded-md bg-gray-100 hover:bg-gray-200 text-gray-700 transition-colors"
-      >
-        {link.text}
-      </span>
-      </a>
-    ))}
-  </div>
-</div>
-
-
-
-
-            <!-- <Timestamp dates={dates} /> -->
+              <!-- <Timestamp dates={dates} /> -->
             </div>
             <!-- <div class="flex gap-2">
               {links.map((link) => <LinkButton {...link} />)}

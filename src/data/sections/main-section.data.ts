@@ -25,19 +25,26 @@ const mainSectionData = {
   //   { label: 'GitHub', value: '/mark-freeman', url: 'https://github.com' },
   //   { label: 'Website', value: 'mark-freeman-personal-website.com', url: '/', fullRow: true },
   // ],
-  description:
-    [
-      {'text':'I graduated with a Bachelor of Science in Computer Engineering, focusing on \
-      Intelligent Systems, from Isfahan University of Technology, under the supervision of Professor Abdolreza Mirzaei.'},
-      {'text':'My primary research interests include generative models for both 2D (image/video) and 3D applications, as well as 3D scene understanding and learning.'},
-    ],
+  description: [
+    {
+      text: 'I graduated with a Bachelor of Science in Computer Engineering, focusing on \
+      Intelligent Systems, from Isfahan University of Technology, under the supervision of Professor Abdolreza Mirzaei.',
+    },
+    {
+      text: 'My primary research interests include generative models for both 2D (image/video) and 3D applications, as well as 3D scene understanding and learning.',
+    },
+  ],
 
-    action: {
+  action: {
     label: 'Download CV',
     url: '/cv.pdf',
     downloadedFileName: 'CV-Masoud_Hadi.pdf',
   },
-  links: [github({ url: 'https://github.com/ex3ploiter' }), linkedin({ url: 'https://www.linkedin.com/in/masoud-hadi-a382601b4/' }), mail({ url: 'mailto:masoudhadi2001@gmail.com' })],
+  links: [
+    github({ url: 'https://github.com/ex3ploiter' }),
+    linkedin({ url: 'https://www.linkedin.com/in/masoud-hadi-a382601b4/' }),
+    mail({ url: 'mailto:masoudhadi2001@gmail.com' }),
+  ],
 } as const satisfies ReadonlyDeep<MainSection>;
 
 export default mainSectionData;
