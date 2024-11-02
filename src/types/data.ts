@@ -6,7 +6,7 @@ import type { ExperienceSection } from './sections/experience-section.types';
 // import type { FavoritesSection } from './sections/favorites-section.types';
 import type { MainSection } from './sections/main-section.types';
 import type { PortfolioSection } from './sections/portfolio-section.types';
-// import type { SkillsSection } from './sections/skills-section.types';
+import type { SkillsSection } from './sections/skills-section.types';
 // import type { TestimonialsSection } from './sections/testimonials-section.types';
 
 export type Config = {
@@ -35,7 +35,6 @@ export type Sections = {
   /**
    * Grouped lists of your skills.
    */
-  // skills: SkillsSection;
 
   /**
    * Your employment history.
@@ -61,6 +60,8 @@ export type Sections = {
    * [WEB] List of sources you use to gain knowledge and inspiration.
    */
   // favorites: FavoritesSection;
+
+  skills?: SkillsSection;
 };
 
 /**
