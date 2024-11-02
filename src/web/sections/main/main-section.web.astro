@@ -13,6 +13,7 @@ export interface Props extends MainSection {}
 
 const { action, config, description, details, fullName, image, links, role, tags } = Astro.props;
 ---
+<!-- class="h-24 w-24 max-w-none rounded-lg sm:h-36 sm:w-36 md:h-52 md:w-52" -->
 
 <SectionCard {...config} hideTitle>
   <div class="flex flex-col items-start gap-6 sm:flex-row">
@@ -20,9 +21,7 @@ const { action, config, description, details, fullName, image, links, role, tags
       <Photo
         src={image}
         alt={fullName}
-        width={320}
-        height={320}
-        class="h-24 w-24 max-w-none rounded-lg sm:h-36 sm:w-36 md:h-52 md:w-52"
+        class="h-auto w-auto   rounded-lg  sm:h-48 sm:w-48"
       />
       <DownloadButton {...action} />
     </div>
@@ -43,12 +42,14 @@ const { action, config, description, details, fullName, image, links, role, tags
         }
       </div>
       <div class="flex flex-col gap-6">
-        <div class="inline-grid xl:grid-cols-[auto_auto]">
-          {details.map((detail) => <LabelledValue {...detail} />)}
-        </div>
         <div class="flex flex-col gap-4">
-          <Description content={description} />
-          <TagsList tags={tags} />
+          {
+          description?.map((desc) => (
+          <Description content={desc.text} />
+          ))
+          }
+          <!-- <Description content={description} /> -->
+          <!-- <TagsList tags={tags} /> -->
         </div>
       </div>
     </div>

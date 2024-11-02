@@ -18,14 +18,15 @@ export interface MainSection extends Section {
   /**
    * Your current role.
    */
-  role: string;
+  role?: string;
 
   /**
    * Label-value pairs with some key details about you.
    *
    * E.g. phone, email, location, expected salary.
    */
-  details: LabelledValue[];
+  // details?: LabelledValue[];
+  // details?: Array<{text:string}>;
 
   /**
    * [PDF] Labeled-value pairs that will be used in the PDF version of your resume.
@@ -39,7 +40,8 @@ export interface MainSection extends Section {
   /**
    * A short overview of you and your experience.
    */
-  description: string;
+  // description: string;
+  description?: Array<{text:string}>;
 
   /**
    * [WEB] Any information that you want to highlight.

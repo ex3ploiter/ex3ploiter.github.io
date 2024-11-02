@@ -62,16 +62,16 @@ const skillsSectionData = {
         pnpm({ level: 3 }),
       ],
     },
-    {
-      title: 'I want to learn',
-      skills: [apolloGraphql(), astro(), supabase(), cypress()],
-    },
+    // {
+    //   title: 'I want to learn',
+    //   skills: [apolloGraphql(), astro(), supabase(), cypress()],
+    // },
     {
       title: 'I speak',
       skills: [
-        { icon: 'circle-flags:pl', name: 'Polish - native' },
+        { icon: 'circle-flags:ir', name: 'Farsi - native' },
         { icon: 'circle-flags:us', name: 'English - C1' },
-        { icon: 'circle-flags:es-variant', name: 'Spanish - B1' },
+        // { icon: 'circle-flags:es-variant', name: 'Spanish - B1' },
       ],
     },
   ],

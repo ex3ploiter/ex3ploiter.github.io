@@ -20,8 +20,8 @@ import {
 
 const portfolioSectionData = {
   config: {
-    title: 'Projects',
-    slug: 'projects',
+    title: 'Publications',
+    slug: 'publications',
     icon: 'fa6-solid:rocket',
     visible: true,
     screenshots: {
@@ -31,14 +31,30 @@ const portfolioSectionData = {
   },
   projects: [
     {
-      name: 'Golden Bulls',
-      image: import('@/assets/portfolio/project-1.jpeg'),
-      dates: [new Date('2020-03'), null],
+      name: 'GS-VTON: Controllable 3D Virtual Try-on with Gaussian Splatting',
+      image: import('@/assets/portfolio/GS-VTON-teaser.png'),
+      published: 'Preprint 2024',
+
+      authors: [
+        { name: "Masoud Hadi", isCorresponding: false,isBold:true,homepageLink:'#' ,isEqual:true},
+        { name: "Yukang Cao", isCorresponding: false,isBold:false,homepageLink:'https://yukangcao.github.io/' ,isEqual:true},
+        { name: "Liang Pan", isCorresponding: true ,isBold:false,homepageLink:'https://scholar.google.com/citations?user=lSDISOcAAAAJ&hl=zh-CN&oi=ao'},
+        { name: "Ziwei Liu", isCorresponding: true ,isBold:false,homepageLink:'https://liuziwei7.github.io/'}
+      ],
+      paperLinks:[
+        {text:'Project Website',url:'https://yukangcao.github.io/GS-VTON/'},
+        {text:'Paper',url:'https://arxiv.org/abs/2410.05259'},
+        {text:'Code',url:'https://github.com/yukangcao/GS-VTON'},
+
+      ],
+
+      // dates: [new Date('2020-03'), null],
+      // ,
       details: [
-        { label: 'Team size', value: '1 person' },
-        { label: 'My role', value: ['Front-end Developer', 'Designer'] },
-        { label: 'Company', value: 'None' },
-        { label: 'Category', value: ['Web app', 'Open source'] },
+        // { label: 'Team size', value: '1 person' },
+        // { label: 'My role', value: ['Front-end Developer', 'Designer'] },
+        // { label: 'Company', value: 'None' },
+        // { label: 'Category', value: ['Web app', 'Open source'] },
       ],
       pdfDetails: [
         { label: 'Demo', value: 'https://golden-bulls-d73jd7.netlify.app', url: '#' },
@@ -50,79 +66,56 @@ const portfolioSectionData = {
         { src: import('@/assets/portfolio/project-1-screenshot-3.jpg'), alt: 'Third screenshot' },
       ],
       description:
-        'In tristique vulputate augue vel egestas. Quisque ac imperdiet tortor, at lacinia ex. Duis vel ex hendrerit, commodo odio sed, aliquam enim. Ut arcu nulla, tincidunt eget arcu eget, molestie vulputate nisi. Nunc malesuada leo et est iaculis facilisis.',
+        '',
       tagsList: {
-        title: 'Technologies',
-        tags: [nextJs(), sass(), pnpm(), eslint(), prettier()],
+        // title: 'Technologies',
+        title: '',
+        // tags: [nextJs(), sass(), pnpm(), eslint(), prettier()],
+        tags: [],
       },
       links: [mockups({ url: '#' }), demo({ url: '#' })],
     },
+
     {
-      name: 'TruQuest',
-      image: import('@/assets/portfolio/project-2.jpeg'),
-      dates: [new Date('2019-06'), new Date('2020-02')],
-      details: [
-        { label: 'Team size', value: '7 people' },
-        { label: 'My role', value: ['Front-end Developer', 'Mobile Developer', 'Designer'] },
-        { label: 'Company', value: 'Facebook' },
-        { label: 'Category', value: ['Web app', 'Mobile app'] },
+      name: 'RODEO: Robust Out-of-Distribution Detection Via Exposing Adaptive Outliers',
+      image: import('@/assets/portfolio/RODEO.png'),
+      published: 'ICML 2024',
+
+
+
+      authors: [
+        { "name": "Hossein Mirzaei", "isCorresponding": false, "isBold": false, "homepageLink": "https://scholar.google.com/citations?user=gISaPsoAAAAJ&hl=en" },
+        { "name": "Mohammad Jafari", "isCorresponding": false, "isBold": false, "homepageLink": "https://mohammadjafari80.github.io/" },
+        { "name": "Hamid Reza Dehghani", "isCorresponding": false, "isBold": false, "homepageLink": "#" },
+        { "name": "Ali Ansari", "isCorresponding": false, "isBold": false, "homepageLink": "https://allliance.github.io/" },
+        { "name": "Sepehr Ghobadi", "isCorresponding": false, "isBold": false, "homepageLink": "#" },
+        { "name": "Masoud Hadi", "isCorresponding": false, "isBold": true, "homepageLink": "#" },
+        { "name": "Arshia Soltani Moakhar", "isCorresponding": false, "isBold": false, "homepageLink": "#" },
+        { "name": "Mohammad Azizmalayeri", "isCorresponding": false, "isBold": false, "homepageLink": "#" },
+        { "name": "Mahdieh Soleymani Baghshah", "isCorresponding": false, "isBold": false, "homepageLink": "https://scholar.google.com/citations?user=S1U0KlgAAAAJ&hl=en" },
+        { "name": "Mohammad Hossein Rohban", "isCorresponding": false, "isBold": false, "homepageLink": "https://scholar.google.com/citations?user=pRyJ6FkAAAAJ&hl=en" }
       ],
-      pdfDetails: [
-        { label: 'Demo', value: 'https://tru-quest-ck7ea3.netlify.app', url: '#' },
-        { label: 'Repository', value: 'https://github.com/mark-freeman/tru-quest', url: '#' },
+      paperLinks: [
+        { "text": "Project Website", "url": "https://rohban-lab.github.io/rodeo/" },
+        { "text": "Paper", "url": "https://icml.cc/virtual/2024/poster/32673" },
+        { "text": "Code", "url": "#" }
+      ],
+
+
+      details: [
       ],
       description:
-        'Ut ultricies tortor at sodales aliquam. Vivamus metus ante, fringilla nec ligula in, suscipit rhoncus mauris. Praesent hendrerit velit odio, at accumsan urna faucibus convallis. Nunc at massa eget ligula volutpat dictum a sit amet libero. Vestibulum iaculis molestie maximus. In hac habitasse platea dictumst.',
+        '',
       tagsList: {
-        title: 'Technologies',
-        tags: [react(), tailwindCss(), nestJs(), postgreSql()],
+        // title: 'Technologies',
+        title: '',
+        // tags: [nextJs(), sass(), pnpm(), eslint(), prettier()],
+        tags: [],
       },
       links: [mockups({ url: '#' }), demo({ url: '#' })],
     },
-    {
-      name: 'Software Chasers',
-      image: import('@/assets/portfolio/project-3.jpeg'),
-      dates: [new Date('2018-01'), new Date('2020-12')],
-      details: [
-        { label: 'Team size', value: '3 people' },
-        { label: 'My role', value: ['Front-end Developer', 'Designer'] },
-        { label: 'Company', value: 'None' },
-        { label: 'Category', value: ['Web app', 'Open source'] },
-      ],
-      pdfDetails: [
-        { label: 'Demo', value: 'https://software-chasers-e82l8e.netlify.app', url: '#' },
-        { label: 'Repository', value: 'https://github.com/mark-freeman/software-chasers', url: '#' },
-      ],
-      description:
-        'Quisque id consectetur eros. In hac habitasse platea dictumst. Sed eu pulvinar orci. Mauris consequat, est in dignissim varius, neque nisl commodo mauris, id blandit risus justo eu nulla.',
-      tagsList: {
-        title: 'Technologies',
-        tags: [react(), chakraUi(), typescript(), nx(), pnpm()],
-      },
-      links: [website({ url: '#' }), github({ url: '#' })],
-    },
-    {
-      name: 'Disco Ninjas',
-      image: import('@/assets/portfolio/project-4.jpeg'),
-      dates: [new Date('2016-05'), new Date('2018-07')],
-      details: [
-        { label: 'Team size', value: '11 people' },
-        { label: 'My role', value: 'Front-end Developer' },
-        { label: 'Company', value: 'Google' },
-        { label: 'Category', value: ['Mobile app', 'Open source'] },
-      ],
-      pdfDetails: [
-        { label: 'Demo', value: 'https://disco-ninjas-g321ol.netlify.app', url: '#' },
-        { label: 'Repository', value: 'https://github.com/mark-freeman/disco-ninjas', url: '#' },
-      ],
-      description:
-        'Praesent eu neque tortor. Vestibulum ac magna nisl. Vivamus massa sem, feugiat in pharetra non, convallis egestas purus. Ut consequat ullamcorper sem, in euismod nibh posuere ut. ',
-      tagsList: {
-        title: 'Technologies',
-        tags: [typescript(), jest(), firebase()],
-      },
-      links: [mockups({ url: '#' }), github({ url: '#' })],
-    },
+
+
   ],
 } as const satisfies ReadonlyDeep<PortfolioSection>;
 

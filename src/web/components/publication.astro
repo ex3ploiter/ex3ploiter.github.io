@@ -1,0 +1,30 @@
+---
+import Photo from '@/components/photo.astro';
+import type { Photo as PhotoType } from '@/types/shared';
+
+interface Props {
+  src?: PhotoType;
+  alt: string;
+  size: 'large' | 'small';
+}
+
+const { src, alt, size } = Astro.props;
+
+const sizeToClass = /* tw */ {
+  large: 'h-44 w-44',
+  small: 'h-12 w-12',
+};
+---
+
+{
+  src && (
+    <Photo
+      src={src}
+      alt={alt}
+      // class:list={['hidden rounded-md sm:block', sizeToClass['small']]}
+      class="hidden rounded-md sm:block w-auto h-auto max-w-[180px] max-h-[250px]"
+      width={}
+      height={}
+    />
+  )
+}

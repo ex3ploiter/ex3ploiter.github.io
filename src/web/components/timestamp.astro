@@ -4,7 +4,7 @@ import formatDateRange from '@/utils/format-date-range';
 import Typography from './typography.astro';
 
 export interface Props {
-  dates: DateRange;
+  dates?: DateRange;
 }
 const { dates } = Astro.props;
 ---

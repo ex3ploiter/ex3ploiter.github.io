@@ -30,7 +30,7 @@ export interface Project {
   /**
    * Date range when you were working on the project.
    */
-  dates: DateRange;
+  dates?: DateRange;
 
   /**
    * Label-value pairs with some key details about the project.
@@ -65,7 +65,27 @@ export interface Project {
   /**
    * [WEB] Links related to your project (e.g. GitHub repository, live demo, mockups).
    */
+  paperLinks: Array<{
+    text: string;
+    url: string;
+    published?:string;
+  }>;
+  published: string;
+
   links: LinkButton[];
+
+  authors: Array<{
+    name: string;
+    isCorresponding?: boolean;
+    isEqual?:boolean;
+    isBold?: boolean;
+    homepageLink?:string;
+  }>;
+  year?: number;
+
+
+
+
 }
 
 export interface PortfolioSection extends Section {
@@ -73,6 +93,10 @@ export interface PortfolioSection extends Section {
    * List of your projects in a chronological order. Start with the most recent one.
    */
   projects: Project[];
+  authors?: Array<{
+    name?: string;
+    isCorresponding?: boolean;
+  }>;
 
   config: Section['config'] & {
     /**
@@ -91,3 +115,15 @@ export interface PortfolioSection extends Section {
     };
   };
 }
+
+// export interface PortfolioSection extends Section {
+//   authors?: Array<{
+//     name?: string;
+//     isCorresponding?: boolean;
+//   }>;
+//   year?: number;
+//   links?: Array<{
+//     text?: string;
+//     url?: string;
+//   }>;
+// }

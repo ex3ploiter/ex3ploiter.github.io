@@ -164,3 +164,25 @@ export const vue = createSkillFactory({
   iconColor: '#4FC08D',
   url: 'https://vuejs.org/',
 });
+
+
+export const csharp = createSkillFactory({
+  name: 'C#',
+  icon: 'simple-icons:csharp',
+  iconColor: '#3178C6',
+  // url: '#',
+});
+
+export const dotnet = createSkillFactory({
+  name: '.NET',
+  icon: 'simple-icons:dotnet',
+  iconColor: '#06B6D4',
+  // url: '#',
+});
+
+export const mysql = createSkillFactory({
+  name: 'MySQL',
+  icon: 'simple-icons:mysql',
+  iconColor: '#F7B93E',
+  // url: '#',
+});
