@@ -18,14 +18,17 @@ const { action, config, description, details, fullName, image, links, role, tags
 <SectionCard {...config} hideTitle>
   <div class="flex flex-col items-start gap-6 sm:flex-row">
     <div class="flex items-center gap-4 sm:flex-col">
-      <Photo src={image} alt={fullName} class="h-auto w-auto rounded-lg sm:h-48 sm:w-48" />
+      <!-- <Photo src={image} alt={fullName} class="h-auto w-auto rounded-lg sm:h-52 sm:w-52" /> -->
+      <!-- <Photo src={image} alt={fullName} class="h-56  w-56 rounded-lg " /> -->
+      <Photo src={image} alt={fullName} class="h-56  w-56 rounded-lg sm:h-36 sm:w-36 md:h-52 md:w-52" />
+      <!-- <Photo src={image} alt={fullName} class="h-24 w-24 max-w-none rounded-lg sm:h-36 sm:w-36 md:h-52 md:w-52" /> -->
       <DownloadButton {...action} />
     </div>
     <div class="flex w-full flex-col gap-5">
       <div class="flex w-full flex-col justify-between gap-2 sm:flex-row">
         <div class="w-full">
           <Typography variant="main-title">{fullName}</Typography>
-          <Typography variant="main-subtitle">{role}</Typography>
+          <!-- <Typography variant="main-subtitle">{role}</Typography> -->
         </div>
         {
           links.length > 0 && (
