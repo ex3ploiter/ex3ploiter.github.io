@@ -14,7 +14,7 @@ const config = {
   meta: {
     title: 'Masoud Hadi',
     description: '',
-    faviconPath: '/src/assets/my-image.jpeg',
+    faviconPath: '/src/assets/1403-08-11 20.51.29.jpg',
   },
   pdf: {
     footer:
