@@ -29,7 +29,7 @@ const mainSectionData = {
   description: [
     {
       text: 'I graduated with a Bachelor of Science in Computer Engineering, specializing in Intelligent Systems,\
-      from Isfahan University of Technology. During my studies, I supervised by [Prof. Ziwei Liu](https://liuziwei7.github.io/), working alongside [Dr. Yukang Cao](https://yukangcao.github.io/) on generative models and 2D/3D editing. I also researched adversarial robustness and outlier detection with [Prof. Mohammad Hossein Rohban](https://scholar.google.com/citations?user=pRyJ6FkAAAAJ&hl=en), and explored GNN-based community detection under [Prof. Abdolreza Mirzaei](https://scholar.google.com/citations?user=4t4LRdoAAAAJ&hl=en).'
+      from Isfahan University of Technology. During my studies, I supervised by [Prof. Ziwei Liu](https://liuziwei7.github.io/), working alongside [Dr. Yukang Cao](https://yukangcao.github.io/) on generative models and 2D/3D editing. I also researched adversarial robustness and outlier detection with [Prof. Mohammad Hossein Rohban](https://scholar.google.com/citations?user=pRyJ6FkAAAAJ&hl=en), and explored GNN-based community detection under [Prof. Abdolreza Mirzaei](https://scholar.google.com/citations?user=4t4LRdoAAAAJ&hl=en).',
     },
     {
       text: 'My primary research interests include generative models for both 2D (image/video) and 3D applications, as well as 3D scene understanding and learning.',
