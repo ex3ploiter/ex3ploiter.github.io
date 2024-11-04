@@ -168,7 +168,6 @@ export const mail = createLinkFactory({
   icon: 'simple-icons:gmail',
 });
 
-
 export const scholar = createLinkFactory({
   name: 'Google Scholar',
   icon: 'simple-icons:googlescholar',
