@@ -1,7 +1,7 @@
 import type { MainSection } from '@/types/sections/main-section.types';
 import type { ReadonlyDeep } from 'type-fest';
 // import { facebook, github, linkedin, mail, twitter } from '../helpers/links';
-import { github, linkedin, mail } from '../helpers/links';
+import { github, linkedin, mail,scholar } from '../helpers/links';
 
 const mainSectionData = {
   config: {
@@ -45,6 +45,7 @@ const mainSectionData = {
     github({ url: 'https://github.com/ex3ploiter' }),
     linkedin({ url: 'https://www.linkedin.com/in/masoud-hadi-a382601b4/' }),
     mail({ url: 'mailto:masoudhadi2001@gmail.com' }),
+    scholar({ url: 'https://scholar.google.com/citations?hl=en&authuser=3&user=bs_BDewAAAAJ' }),
   ],
 } as const satisfies ReadonlyDeep<MainSection>;
 

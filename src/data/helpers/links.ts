@@ -165,5 +165,11 @@ export const repository = createLinkFactory({
 
 export const mail = createLinkFactory({
   name: 'Mail',
-  icon: 'fa6-brands:google',
+  icon: 'simple-icons:gmail',
+});
+
+
+export const scholar = createLinkFactory({
+  name: 'Google Scholar',
+  icon: 'simple-icons:googlescholar',
 });
