@@ -32,7 +32,7 @@ const portfolioSectionData = {
   },
   projects: [
     {
-      name: 'GS-VTON: Controllable 3D Virtual Try-on with Gaussian Splatting',
+      name: 'GS-VTON: Controllable 3D Virtual Try-on with Gaussian Splatting*',
       image: import('@/assets/portfolio/GS-VTON-teaser.png'),
       published: 'Preprint 2024',
 
@@ -76,7 +76,7 @@ const portfolioSectionData = {
         { src: import('@/assets/portfolio/project-1-screenshot-2.jpg'), alt: 'Second screenshot' },
         { src: import('@/assets/portfolio/project-1-screenshot-3.jpg'), alt: 'Third screenshot' },
       ],
-      description: '',
+      description: '\\* Authors noted with (*) can reorder their names in resumes and on websites.',
       tagsList: {
         // title: 'Technologies',
         title: '',
