@@ -23,21 +23,28 @@ const { config, sections } = cv();
     <!-- <FavoritesSection {...sections.favorites} /> -->
 
     <!-- Analytics Section - Reduced spacing -->
-    <div class="space-y-2"> <!-- Reduced from space-y-4 to space-y-2 -->
+    <div class="space-y-2">
+      <!-- Reduced from space-y-4 to space-y-2 -->
       <!-- Hits counter badge -->
       <div class="flex justify-center">
-        <img src="https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fex3ploiter.github.io&count_bg=%2379C83D&title_bg=%23555555&icon=&icon_color=%23E7E7E7&title=hits&edge_flat=false"
-             alt="website hits counter"
-             class="hover:opacity-90 transition-opacity"/>
+        <img
+          src="https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fex3ploiter.github.io&count_bg=%2379C83D&title_bg=%23555555&icon=&icon_color=%23E7E7E7&title=hits&edge_flat=false"
+          alt="website hits counter"
+          class="transition-opacity hover:opacity-90"
+        />
       </div>
 
       <!-- Clustrmaps Globe - Reduced container size -->
       <div class="flex justify-center" id="clustrmaps-widget-container">
-        <script type="text/javascript" id="clstr_globe" src="//clustrmaps.com/globe.js?d=YCHzV_TG4VUzAmLTcCIjOfIzgEX-FKpMOsAiU5ZiCQc" is:inline></script>
+        <script
+          type="text/javascript"
+          id="clstr_globe"
+          src="//clustrmaps.com/globe.js?d=YCHzV_TG4VUzAmLTcCIjOfIzgEX-FKpMOsAiU5ZiCQc"
+          is:inline></script>
       </div>
     </div>
   </main>
-  <Sidebar sections={sections}/>
+  <Sidebar sections={sections} />
   <script src="../web/scripts/initialize-tooltips.ts"></script>
 </Layout>
 
@@ -50,7 +57,6 @@ const { config, sections } = cv();
     max-width: 300px; /* Reduced max-width */
     margin: -80px auto; /* Increased negative margin to remove more space */
     overflow: hidden;
-
   }
 
   /* Remove any additional spacing that might be coming from the widget itself */
