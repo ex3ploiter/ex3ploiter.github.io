@@ -24,7 +24,7 @@ const experienceSectionData = {
     title: 'Work experience',
     slug: 'experience',
     icon: 'fa6-solid:suitcase',
-    visible: true,
+    visible: false,
   },
   jobs: [
     {

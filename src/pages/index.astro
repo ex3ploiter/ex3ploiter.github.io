@@ -3,12 +3,9 @@ import Layout from '@/web/components/layout.astro';
 import Sidebar from '@/web/components/sidebar.astro';
 import ThemeToggle from '@/web/components/theme-toggle.astro';
 import MainSection from '@/web/sections/main/main-section.web.astro';
-// import SkillsSection from '@/web/sections/skills/skills-section.web.astro';
 import ExperienceSection from '@/web/sections/experience/experience-section.web.astro';
 import PortfolioSection from '@/web/sections/portfolio/portfolio-section.web.astro';
 import EducationSection from '@/web/sections/education/education-section.web.astro';
-// import TestimonialsSection from '@/web/sections/testimonials/testimonials-section.web.astro';
-// import FavoritesSection from '@/web/sections/favorites/favorites-section.web.astro';
 import cv from '@/data';
 
 const { config, sections } = cv();
@@ -21,10 +18,44 @@ const { config, sections } = cv();
     <!-- <SkillsSection {...sections.skills} /> -->
     <PortfolioSection {...sections.portfolio} />
     <EducationSection {...sections.education} />
-    <ExperienceSection {...sections.experience} />
+    <!-- <ExperienceSection {...sections.experience} /> -->
     <!-- <TestimonialsSection {...sections.testimonials} /> -->
     <!-- <FavoritesSection {...sections.favorites} /> -->
+
+    <!-- Analytics Section - Reduced spacing -->
+    <div class="space-y-2"> <!-- Reduced from space-y-4 to space-y-2 -->
+      <!-- Hits counter badge -->
+      <div class="flex justify-center">
+        <img src="https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fex3ploiter.github.io&count_bg=%2379C83D&title_bg=%23555555&icon=&icon_color=%23E7E7E7&title=hits&edge_flat=false"
+             alt="website hits counter"
+             class="hover:opacity-90 transition-opacity"/>
+      </div>
+
+      <!-- Clustrmaps Globe - Reduced container size -->
+      <div class="flex justify-center" id="clustrmaps-widget-container">
+        <script type="text/javascript" id="clstr_globe" src="//clustrmaps.com/globe.js?d=YCHzV_TG4VUzAmLTcCIjOfIzgEX-FKpMOsAiU5ZiCQc" is:inline></script>
+      </div>
+    </div>
   </main>
-  <Sidebar sections={sections} className="sticky top-8 mt-20" />
+  <Sidebar sections={sections}/>
   <script src="../web/scripts/initialize-tooltips.ts"></script>
 </Layout>
+
+<style>
+  #clustrmaps-widget-container {
+    transform: scale(0.35); /* Made even smaller - 50% of original size */
+    transform-origin: center center;
+    min-height: 150px; /* Reduced height further */
+    width: 100%;
+    max-width: 300px; /* Reduced max-width */
+    margin: -80px auto; /* Increased negative margin to remove more space */
+    overflow: hidden;
+
+  }
+
+  /* Remove any additional spacing that might be coming from the widget itself */
+  #clustrmaps-widget-container > * {
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+</style>
