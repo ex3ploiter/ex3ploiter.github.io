@@ -33,7 +33,8 @@ const mainSectionData = {
     },
     {
       // text: 'My primary research interests include generative models for both 2D (image/video) and 3D applications, as well as 3D scene understanding and learning.',
-      text: 'My research lies at the intersection of generative AI and deep learning theory, with a particular focus on diffusion models and their theoretical foundations. I aim to develop efficient and trustworthy frameworks that can handle complex data structures while maintaining robust probabilistic reasoning. Through this work, I strive to bridge fundamental machine learning theory with impactful real-world applications.',
+      text: 'My research lies at the intersection of generative AI and deep learning theory, with a particular focus on diffusion models and their theoretical foundations. I aim to develop efficient and trustworthy frameworks that can handle complex data structures while maintaining robust probabilistic reasoning.',
+      // Through this work, I strive to bridge fundamental machine learning theory with impactful real-world applications.',
     },
   ],
 
