@@ -104,7 +104,7 @@ const portfolioSectionData = {
           isBold: false,
           homepageLink: 'https://mohammadjafari80.github.io/',
         },
-        { name: 'Hamid Reza Dehghani', isCorresponding: false, isBold: false, homepageLink: '#' },
+        { name: 'Hamid Reza Dehbashi', isCorresponding: false, isBold: false, homepageLink: '#' },
         { name: 'Ali Ansari', isCorresponding: false, isBold: false, homepageLink: 'https://allliance.github.io/' },
         { name: 'Sepehr Ghobadi', isCorresponding: false, isBold: false, homepageLink: '#' },
         { name: 'Masoud Hadi', isCorresponding: false, isBold: true, homepageLink: '#' },
