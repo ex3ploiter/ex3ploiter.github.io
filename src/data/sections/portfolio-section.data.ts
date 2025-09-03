@@ -32,46 +32,6 @@ const portfolioSectionData = {
   },
   projects: [
     {
-      name: 'DISTIL: Data-Free Inversion of Suspicious Trojan Inputs via Latent Diffusion',
-      image: import('@/assets/portfolio/DISTIL-teaser.png'),
-      published: 'Preprint 2024',
-      authors: [
-        { name: 'Hossein Mirzaei', isCorresponding: false, isBold: false, homepageLink: '#', isEqual: true },
-        { name: 'Zeinab Taghavi', isCorresponding: false, isBold: false, homepageLink: '#', isEqual: true },
-        { name: 'Sepehr Rezaee', isCorresponding: false, isBold: false, homepageLink: '#', isEqual: true },
-        { name: 'Masoud Hadi', isCorresponding: false, isBold: true, homepageLink: '#', isEqual: true },
-        { name: 'Moein Madadi', isCorresponding: false, isBold: false, homepageLink: '#', isEqual: true },
-        {
-          name: 'Mackenzie W. Mathis',
-          isCorresponding: true,
-          isBold: false,
-          homepageLink: 'https://scholar.google.com/citations?user=4fA4Q8UAAAAJ',
-          isEqual: true,
-        },
-      ],
-      paperLinks: [
-        { text: 'Project Website', url: '#' },
-        { text: 'Paper', url: 'https://arxiv.org/abs/XXXX.XXXXX' },
-        { text: 'Code', url: 'https://github.com/username/DISTIL' },
-      ],
-      details: [],
-      pdfDetails: [
-        { label: 'Demo', value: '#', url: '#' },
-        { label: 'Repository', value: 'https://github.com/username/DISTIL', url: '#' },
-      ],
-      screenshots: [
-        { src: import('@/assets/portfolio/DISTIL-screenshot-1.jpg'), alt: 'First screenshot' },
-        { src: import('@/assets/portfolio/DISTIL-screenshot-2.jpg'), alt: 'Second screenshot' },
-        { src: import('@/assets/portfolio/DISTIL-screenshot-3.jpg'), alt: 'Third screenshot' },
-      ],
-      description: '\\* Authors noted with (*) can reorder their names in resumes and on websites.',
-      tagsList: {
-        title: '',
-        tags: [],
-      },
-      links: [mockups({ url: '#' }), demo({ url: '#' })],
-    },
-    {
       name: 'GS-VTON: Controllable 3D Virtual Try-on with Gaussian Splatting*',
       image: import('@/assets/portfolio/GS-VTON-teaser.png'),
       published: 'Preprint 2024',
