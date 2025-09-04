@@ -16,13 +16,8 @@ const sizeToClass = /* tw */ {
 };
 ---
 
-
 {
   src && (
-    <Photo
-      src={src}
-      alt={alt}
-      class={`h-auto w-[180px] object-contain rounded-md sm:block ${sizeToClass['small']}`}
-    />
+    <Photo src={src} alt={alt} class={`h-auto w-[180px] rounded-md object-contain sm:block ${sizeToClass['small']}`} />
   )
 }
