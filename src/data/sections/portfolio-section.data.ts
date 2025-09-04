@@ -45,8 +45,8 @@ const portfolioSectionData = {
           name: 'Mackenzie W. Mathis',
           isCorresponding: false,
           isBold: false,
-          homepageLink: 'https://scholar.google.com/citations?user=4fA4Q8UAAAAJ',
-          isEqual: true,
+          homepageLink: '#',
+          isEqual: false,
         },
       ],
       paperLinks: [
