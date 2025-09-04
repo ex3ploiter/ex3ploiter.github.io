@@ -28,8 +28,9 @@ const mainSectionData = {
   // ],
   description: [
     {
-      text: 'I graduated with a Bachelor of Science in Computer Engineering,\
-      from Isfahan University of Technology. During my studies, I worked with [Prof. Ziwei Liu](https://liuziwei7.github.io/) and [Dr. Yukang Cao](https://yukangcao.github.io/) on generative models and 2D/3D editing. I also researched adversarial robustness and outlier detection with [Prof. Mohammad Hossein Rohban](https://scholar.google.com/citations?user=pRyJ6FkAAAAJ&hl=en), and explored graph based community detection under the guidance of [Prof. Abdolreza Mirzaei](https://scholar.google.com/citations?user=4t4LRdoAAAAJ&hl=en).',
+      // text: 'I graduated with a Bachelor of Science in Computer Engineering, from Isfahan University of Technology. During my studies, I worked with [Prof. Ziwei Liu](https://liuziwei7.github.io/) and [Dr. Yukang Cao](https://yukangcao.github.io/) on generative models and 2D/3D editing. I also researched adversarial robustness and outlier detection with [Prof. Mohammad Hossein Rohban](https://scholar.google.com/citations?user=pRyJ6FkAAAAJ&hl=en), and explored graph based community detection under the guidance of [Prof. Abdolreza Mirzaei](https://scholar.google.com/citations?user=4t4LRdoAAAAJ&hl=en).',
+      text: 'I graduated with a Bachelor of Science in Computer Engineering, from Isfahan University of Technology. During my studies, I worked with [Prof. Ziwei Liu](https://liuziwei7.github.io/) and [Dr. Yukang Cao](https://yukangcao.github.io/) on generative models. I also researched Trustworthy AI with [Prof. Mackenzie W. Mathis](http://www.mackenziemathislab.org/) and [Prof. Mohammad Hossein Rohban](https://scholar.google.com/citations?user=pRyJ6FkAAAAJ&hl=en).\
+      <br><br>Currently, my research interests lie in developing the mathematical foundations needed to tackle problems in AI. More specifically, I focus on <b>optimization</b> and <b>reinforcement learning</b>, as well as their applications in <b>generative models</b>. I am also interested in efficient AI, particularly through improving the attention mechanisms and the development of optimized kernels. ',
     },
     // {
     // text: 'My primary research interests include generative models for both 2D (image/video) and 3D applications, as well as 3D scene understanding and learning.',

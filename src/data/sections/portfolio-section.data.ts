@@ -32,6 +32,33 @@ const portfolioSectionData = {
   },
   projects: [
     {
+  name: 'DISTIL: Data-Free Inversion of Suspicious Trojan Inputs via Latent Diffusion',
+  image: import('@/assets/portfolio/DISTIL-Teaser.png'),
+  published: 'ICCV 2025',
+  authors: [
+    { name: 'Hossein Mirzaei', isCorresponding: false, isBold: false, homepageLink: '#', isEqual: false },
+    { name: 'Zeinab Taghavi', isCorresponding: false, isBold: false, homepageLink: '#', isEqual: false },
+    { name: 'Sepehr Rezaee', isCorresponding: false, isBold: false, homepageLink: '#', isEqual: false },
+    { name: 'Masoud Hadi', isCorresponding: false, isBold: true, homepageLink: '#', isEqual: false },
+    { name: 'Moein Madadi', isCorresponding: false, isBold: false, homepageLink: '#', isEqual: false },
+    { name: 'Mackenzie W. Mathis', isCorresponding: false, isBold: false, homepageLink: 'https://scholar.google.com/citations?user=4fA4Q8UAAAAJ', isEqual: true }
+  ],
+  paperLinks: [
+    // { text: 'Project Website', url: '#' },
+    { text: 'Paper', url: 'https://arxiv.org/abs/2507.22813' },
+    { text: 'Code', url: 'https://github.com/AdaptiveMotorControlLab/DISTIL' }
+  ],
+  details: [],
+  description: '',
+  tagsList: {
+    title: '',
+    tags: []
+  },
+  links: [mockups({ url: '#' }), demo({ url: '#' })],
+    },
+
+
+    {
       name: 'GS-VTON: Controllable 3D Virtual Try-on with Gaussian Splatting*',
       image: import('@/assets/portfolio/GS-VTON-teaser.png'),
       published: 'Preprint 2024',
@@ -76,7 +103,8 @@ const portfolioSectionData = {
         { src: import('@/assets/portfolio/project-1-screenshot-2.jpg'), alt: 'Second screenshot' },
         { src: import('@/assets/portfolio/project-1-screenshot-3.jpg'), alt: 'Third screenshot' },
       ],
-      description: '\\* Authors noted with (*) can reorder their names in resumes and on websites.',
+      // description: '\\* Authors noted with (*) can reorder their names in resumes and on websites.',
+      description: '',
       tagsList: {
         // title: 'Technologies',
         title: '',
