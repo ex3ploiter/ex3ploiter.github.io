@@ -7,6 +7,7 @@ node_modules
 # Build output
 dist
 stats.html
+graphify-out/
 
 # Favicon generation
 public/favicons

@@ -13,12 +13,9 @@ const config = {
   },
   meta: {
     title: 'Masoud Hadi',
-    description: '',
+    description:
+      'Masoud Hadi is an M.Sc. student and AI researcher working on reinforcement learning theory, multi-agent learning, and learning in games.',
     faviconPath: '/src/assets/1403-08-11 20.51.29.jpg',
-  },
-  pdf: {
-    footer:
-      'I hereby give consent for my personal data included in my application to be processed for the purposes of the recruitment process.',
   },
 } as const satisfies ReadonlyDeep<Config>;
 

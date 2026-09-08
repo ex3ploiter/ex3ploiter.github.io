@@ -4,6 +4,7 @@
 - [Setup guide](setup-guide.md)
 - [PDF generation](pdf-generation.md)
 - [Data transformation](data-transformation.md)
+- [Change summary](change-summary.md)
 
 ## Project development
 

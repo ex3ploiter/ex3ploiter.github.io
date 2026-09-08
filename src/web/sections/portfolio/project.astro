@@ -50,17 +50,17 @@ const galleryId = nanoid(8);
 
               <!-- Authors List -->
               <!-- <div class="flex flex-wrap gap-x-1  mb-2 mt-1 text-base text-gray-700"> -->
-              <div class="mb-2 mt-1 flex flex-wrap gap-x-1 text-base text-gray-700 dark:text-gray-300">
+              <div class="mb-2 mt-1 flex flex-wrap text-base text-gray-700 dark:text-gray-300">
                 {
                   authors.map((author, index) => (
-                    <span>
+                    <span class="inline-flex items-baseline">
                       <a
                         style="font-variant: unset"
-                        href={author.homepageLink}
-                        target="_blank"
+                        href={author.homepageLink === '#' ? undefined : author.homepageLink}
+                        target={author.homepageLink === '#' ? undefined : '_blank'}
                         rel="noopener noreferrer"
-                        class={`
-                        hover:text-blue-600
+                        class={`hover:text-blue-600 inline-flex
+                        items-baseline
                         transition-colors
                         ${author.isBold ? 'font-semibold' : 'font-light'}
                         decoration-blue-400

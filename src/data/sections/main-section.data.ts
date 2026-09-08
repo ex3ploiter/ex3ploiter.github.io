@@ -1,6 +1,5 @@
 import type { MainSection } from '@/types/sections/main-section.types';
 import type { ReadonlyDeep } from 'type-fest';
-// import { facebook, github, linkedin, mail, twitter } from '../helpers/links';
 import { github, linkedin, mail, scholar } from '../helpers/links';
 
 const mainSectionData = {
@@ -12,34 +11,15 @@ const mainSectionData = {
   },
   image: import('@/assets/1403-08-11 20.51.29.jpg'),
   fullName: 'Masoud Hadi',
-  // role: 'Senior React Developer',
-  // details: [
-  //   { label: 'Phone', value: '605 475 6961', url: 'tel:605 475 6961' },
-  //   { label: 'Email', value: 'mark.freeman.dev@gmail.com', url: 'mailto:mark.freeman.dev@gmail.com' },
-  //   { label: 'From', value: 'Warsaw, Poland' },
-  //   { label: 'Salary range', value: '18 000 - 25 000 PLN' },
-  // ],
-  // pdfDetails: [
-  //   { label: 'Phone', value: '605 475 6961' },
-  //   { label: 'Email', value: 'mark.freeman.dev@gmail.com' },
-  //   { label: 'LinkedIn', value: '/in/mark-freeman', url: 'https://linkedin.com' },
-  //   { label: 'GitHub', value: '/mark-freeman', url: 'https://github.com' },
-  //   { label: 'Website', value: 'mark-freeman-personal-website.com', url: '/', fullRow: true },
-  // ],
+  role: 'M.Sc. Student in Computer Engineering - Artificial Intelligence',
   description: [
     {
-      // text: 'I graduated with a Bachelor of Science in Computer Engineering, from Isfahan University of Technology. During my studies, I worked with [Prof. Ziwei Liu](https://liuziwei7.github.io/) and [Dr. Yukang Cao](https://yukangcao.github.io/) on generative models and 2D/3D editing. I also researched adversarial robustness and outlier detection with [Prof. Mohammad Hossein Rohban](https://scholar.google.com/citations?user=pRyJ6FkAAAAJ&hl=en), and explored graph based community detection under the guidance of [Prof. Abdolreza Mirzaei](https://scholar.google.com/citations?user=4t4LRdoAAAAJ&hl=en).',
-      text: 'I graduated with a Bachelor of Science in Computer Engineering, from Isfahan University of Technology. During my studies, I worked with [Prof. Ziwei Liu](https://liuziwei7.github.io/) and [Dr. Yukang Cao](https://yukangcao.github.io/) on generative models. I also researched Trustworthy AI with [Prof. Mackenzie W. Mathis](http://www.mackenziemathislab.org/) and [Prof. Mohammad Hossein Rohban](https://scholar.google.com/citations?user=pRyJ6FkAAAAJ&hl=en).\
-      <br><br>Currently, my research interests lie in developing the mathematical foundations needed to tackle problems in AI. More specifically, I focus on <b>optimization</b> and <b>reinforcement learning</b>, as well as their applications in <b>generative models</b>. I am also interested in efficient AI, particularly through improving the attention mechanisms and the development of optimized kernels. ',
+      text: `I am an M.Sc. student in Computer Engineering (Artificial Intelligence) at the University of Isfahan. My current research focuses on scalable learning and equilibrium computation in structured multi-agent systems, particularly on leveraging structural properties of large Markov games to overcome computational bottlenecks.`,
     },
-    // {
-    // text: 'My primary research interests include generative models for both 2D (image/video) and 3D applications, as well as 3D scene understanding and learning.',
-    // text: 'My research lies at the intersection of generative AI and deep learning theory, with a particular focus on diffusion models and their theoretical foundations.',
-    //  I aim to develop efficient and trustworthy frameworks that can handle complex data structures while maintaining robust probabilistic reasoning.',
-    // Through this work, I strive to bridge fundamental machine learning theory with impactful real-world applications.',
-    // },
+    {
+      text: `More broadly, I am interested in developing principled, scalable, and reliable machine learning methods. My interests include reinforcement learning, multi-agent learning, trustworthy machine learning, and generative modeling, with an emphasis on the theoretical and algorithmic foundations of these areas.`,
+    },
   ],
-
   action: {
     label: 'Download CV',
     url: '/cv.pdf',
